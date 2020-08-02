@@ -1,0 +1,10 @@
+<!--pages/opt_detail/opt_detail.wxml-->
+<view class="opt_detail_container">
+  <text class='opt_title'>{{opt_detail.cname}}</text>
+  <view class='opt_content'>
+    <text>时间： {{opt_detail.time}}</text>
+    <text>赛季： {{opt_detail.season}}</text>
+    <text>更新内容： {{opt_detail.update_content}}</text>
+  </view>
+</view>
+

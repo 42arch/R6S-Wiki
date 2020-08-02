@@ -1,0 +1,66 @@
+<!--pages/op_detail/op_detail.wxml-->
+
+<view id='full_view'>
+
+  <view class='top_view'>
+    <view class='left_side_view'>
+      <image class='badge_img' src='{{detail.badge}}'></image>
+      <text id='name'>{{operator_name}}</text>
+
+      <view class='role_view'>
+        <image class="role_icon" wx:if="{{detail.role == 'atk'}}" src="http://ing3n.xyz/asset/ic_attackers.png"></image>
+        <image class="role_icon" wx:elif="{{detail.role == 'def'}}" src="http://ing3n.xyz/asset/ic_defenders.png"></image>
+      </view>
+      <view class="stat_view">
+        <text>难度：{{detail.difficult}}</text>
+        <text>速度：{{detail.speed}}</text>
+        <text>装甲：{{detail.armor}}</text>
+      </view>
+      <view class="ability_view">
+        <text class="ability_name">{{detail.ability}}</text>
+        <text class="ability_info">{{detail.ability_info}}</text>
+      </view>
+    </view>
+    <image class='portrait_view' src='{{detail.full_avatar}}'></image>
+
+  </view>
+  <view class='bottom_view'>
+    <text>特勤干员简介</text>
+    <view class='basic_info_view'>
+      <text class='info'>姓名：{{detail.real_name}}</text>
+      <text class='info'>性别：{{detail.gender}}</text>
+      <text class='info'>组织：{{detail.unit.name}}</text>    
+      <text class='info'>身高：{{detail.height}}</text>
+      <text class='info'>体重：{{detail.weight}}</text>
+      <text class='info'>生日：{{detail.birthday}}</text>
+      <text class='info'>出生地：{{detail.birth_place}}</text>
+    </view>
+    <view class='weapon_view'>
+      <text>主武器</text>
+      <view class="single_weapon_view">
+        <image class="weapon_img" wx:for="{{detail.weapons}}" wx:for-item="item" wx:key="index" wx:if="{{item.is_main == true}}" src="{{item.image}}"></image>
+        <!-- <text class="weapon_text">{{item.name}}</text> -->
+      </view>
+      <text>副武器</text>
+      <view class="single_weapon_view">
+        <image class="weapon_img" wx:for="{{detail.weapons}}" wx:for-item="item" wx:key="index" wx:if="{{item.is_main == false}}" src="{{item.image}}"></image>
+      </view>
+      <text>装备</text>
+    </view>
+    <view class='info_view'>
+      <text class="banner_text">- 背景</text>
+      <text class='info_content'>{{detail.background}}</text>
+      <text class="banner_text">- 心理状态</text>
+      <text class='info_content'>{{detail.report}}</text>
+      <text class="banner_text">- 培训经历</text>
+      <text class='info_content'>{{detail.train}}</text>
+      <text class="banner_text">- 相关经验</text>
+      <text class='info_content'>{{detail.experience}}</text>
+      <text class="banner_text">- 附注</text>
+      <text class='info_content'>{{detail.remark}}</text>
+    </view>
+
+  </view>
+
+</view>
+

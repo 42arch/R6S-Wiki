@@ -1,0 +1,7 @@
+<!--pages/operation/operation.wxml-->
+<view id='opt_container'>
+  <view class='opt_item' bindtap='goOptDetail' wx:for="{{operations}}" wx:for-index="idx" wx:for-item="opt" wx:key="idx" data-name='{{opt.index}}'>
+    <cover-image class='opt_img' src='{{opt.thumb_img}}'></cover-image>
+    <text class='opt_name'>{{opt.name}}</text>
+  </view>
+</view>

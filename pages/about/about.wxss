@@ -1,0 +1,35 @@
+/* pages/about/about.wxss */
+.about {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start
+}
+.about_title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.inspired_info{
+  text-align: center;
+  font-size: 16px;
+}
+.about_info{
+  /* margin-top: 5rem; */
+  border-top: 1px solid #eee;
+  position: absolute;
+  bottom: 0;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+}
+#gameIcon {
+  margin-top: 3%;
+  width: 40%;
+  z-index: 99;
+}
+#about_bg {
+  width: 100%;
+  position: absolute;
+  top: 0;
+}

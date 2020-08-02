@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/operator/operator",
+    "pages/op_detail/op_detail",
+    "pages/about/about",
+    "pages/operation/operation",
+    "pages/map/map",
+    "pages/affiliation/affiliation",
+    "pages/opt_detail/opt_detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ffdb00",
+    "navigationBarTitleText": "彩虹小队档案",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#003366"
+  },
+  "tabBar": {
+    "selectedColor": "#36a9e0",
+    "backgroundColor": "#323c46",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/index_grey.png",
+        "selectedIconPath": "images/index.png"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "关于",
+        "iconPath": "images/about_grey.png",
+        "selectedIconPath": "images/about.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}
