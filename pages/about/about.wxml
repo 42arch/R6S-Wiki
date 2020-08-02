@@ -8,13 +8,7 @@
 
 
   <view class='about_info'>
-    <view class='inspired_info'>
-      <text>Inspired by: R6Stats(Andriod)、彩虹六号中文网(miniApp)</text> 
-    </view>
-    <text>此微信小程序为作者业余时间开发的第三方应用，所有数据及素材均采集自互联网。</text>
-    <text>因游戏更新等原因，小程序中的信息会相对滞后，请以育碧官方游戏内实时数据为准。</text>
-    <text>todo: 寒假期间此小程序将会重置,敬请期待...</text>
-    <view class='to_log' bindtap='toLogPage'><icon type="info" color='white' size='12'/> 更新日志</view>
+    <text style="font-size: 1rem">新版本重置中...</text>
   </view>
 
 </view>
