@@ -9,6 +9,14 @@ Page({
     operator_name: null
   },
 
+  // 跳转到武器详情页面
+  goToWeaponPage(e){
+    console.log(e.currentTarget.dataset.name)
+    wx.navigateTo({
+      url: '/pages/weapon_detail/weapon_detail?name='+this.data.name
+    })
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */

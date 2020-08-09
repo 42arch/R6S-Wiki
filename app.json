@@ -7,7 +7,8 @@
     "pages/operation/operation",
     "pages/map/map",
     "pages/affiliation/affiliation",
-    "pages/opt_detail/opt_detail"
+    "pages/opt_detail/opt_detail",
+    "pages/weapon_detail/weapon_detail"
   ],
   "window": {
     "backgroundTextStyle": "light",

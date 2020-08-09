@@ -38,12 +38,12 @@
     <view class='weapon_view'>
       <text>主武器</text>
       <view class="single_weapon_view">
-        <image class="weapon_img" wx:for="{{detail.weapons}}" wx:for-item="item" wx:key="index" wx:if="{{item.is_main == true}}" src="{{item.image}}"></image>
+        <image bindtap="goToWeaponPage" class="weapon_img" wx:for="{{detail.weapons}}" wx:for-item="item" wx:key="index" wx:if="{{item.is_main == true}}" src="{{item.image}}" data-name="{{item.name}}"></image>
         <!-- <text class="weapon_text">{{item.name}}</text> -->
       </view>
       <text>副武器</text>
       <view class="single_weapon_view">
-        <image class="weapon_img" wx:for="{{detail.weapons}}" wx:for-item="item" wx:key="index" wx:if="{{item.is_main == false}}" src="{{item.image}}"></image>
+        <image bindtap="goToWeaponPage" class="weapon_img" wx:for="{{detail.weapons}}" wx:for-item="item" wx:key="index" wx:if="{{item.is_main == false}}" src="{{item.image}}" data-name="{{item.name}}"></image>
       </view>
       <text>装备</text>
     </view>

@@ -1,51 +1,25 @@
-// pages/operator/operator.js
+// pages/weapon_detail.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    operators: null,
-    name: null
-  },
-  goToOperatorPage(e){
-    this.setData({
-      name: e.currentTarget.dataset.name
-    })
-    // console.log(this.data.name)
-    wx.navigateTo({
-      url: '/pages/op_detail/op_detail?name='+this.data.name,
-      success: function (res) { },
-      fail: function (res) { },
-      complete: function (res) { },
-    })
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    var self = this
-    wx.request({
-      url : "https://api.ing3n.xyz/r6s/operators/simple",
-      data: {},
-      header:{
-          // "Content-Type":"application/json"
-          "content-type": "application/texts"
-      },
-      success(res){
-        // console.log(res.data)
-        self.setData({
-          operators: res.data
-        })
-      }
-    })
+
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
+
   },
 
   /**
