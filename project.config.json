@@ -36,9 +36,13 @@
     "minifyWXSS": true
   },
   "compileType": "miniprogram",
-  "libVersion": "2.12.0",
-  "appid": "wxb95ec0af78d27e0d",
-  "projectname": "R6SWiki",
+  "libVersion": "2.6.6",
+  "appid": "wx1714e9aa709bac71",
+  "projectname": "r6swiki",
+  "cloudfunctionTemplateRoot": "",
+  "watchOptions": {
+    "ignore": []
+  },
   "debugOptions": {
     "hidedInDevtools": []
   },
