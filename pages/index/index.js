@@ -5,13 +5,22 @@ Page({
    * 页面的初始数据
    */
   data: {
+    opt_data: null
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    wx.request({
+      url: 'https://api.ing3n.xyz/r6s/operators/simple',
+      header: {
+        "content-type": "application/texts"
+      },
+      success(res) {
+        console.log(res)
+      }
+    })
   },
 
   /**

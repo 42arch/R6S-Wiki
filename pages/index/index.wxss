@@ -1,7 +1,41 @@
 /* pages/index/index.wxss */
-.tttt {
-  background-color: cyan !important;
-  color: blue !important;
-  font-size: 25px !important;
+.top {
+  background-color: yellow;
+  height: 50rpx;
 }
 
+.operator_view {
+  background-color: pink;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.operator_view .atk_view {
+  border-right: 1rpx solid #ffffff;
+  text-align: center;
+  width: 50%;
+}
+
+.operator_view .def_view {
+  border-left: 1rpx solid #ffffff;
+  text-align: center;
+  width: 50%;
+
+}
+
+.opt_view_head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.opt_view_head image {
+  width: 80rpx;
+  height: 80rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

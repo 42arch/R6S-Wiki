@@ -1,1 +1,26 @@
-首页
+
+<view class="top">
+  上方导航按钮
+</view>
+
+<view class="operator_view">
+  <view class="atk_view">
+    <view class="opt_view_head">
+      <image src="../../assets/images/icon_atk.png"></image>
+      <text>进攻方</text>
+    </view>
+    <view class="opt_view_body">
+      
+    </view>
+  </view>
+
+  <view class="def_view">
+    <view class="opt_view_head">
+      <image src="../../assets/images/icon_def.png"></image>
+      <text>防守方</text>
+    </view>
+    <view class="opt_view_body">
+
+    </view>
+  </view>
+</view>
