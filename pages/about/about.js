@@ -7,14 +7,7 @@ Page({
   data: {
 
   },
-  toLogPage: function(e){
-    wx.navigateTo({
-      url: '/pages/log/log',
-      success: function (res) { },
-      fail: function (res) { },
-      complete: function (res) { },
-    })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */
@@ -33,7 +26,8 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    console.log("关于")
+    this.getTabBar().init()
   },
 
   /**

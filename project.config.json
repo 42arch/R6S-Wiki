@@ -12,7 +12,7 @@
     "minified": true,
     "newFeature": true,
     "coverView": true,
-    "nodeModules": false,
+    "nodeModules": true,
     "autoAudits": false,
     "showShadowRootInWxmlPanel": true,
     "scopeDataCheck": false,
@@ -21,6 +21,8 @@
     "checkSiteMap": false,
     "uploadWithSourceMap": true,
     "compileHotReLoad": false,
+    "useMultiFrameRuntime": false,
+    "useApiHook": true,
     "babelSetting": {
       "ignore": [],
       "disablePlugins": [],
@@ -28,52 +30,37 @@
     },
     "useIsolateContext": true,
     "useCompilerModule": false,
-    "userConfirmedUseCompilerModuleSwitch": false
+    "userConfirmedUseCompilerModuleSwitch": false,
+    "packNpmManually": false,
+    "packNpmRelationList": [],
+    "minifyWXSS": true
   },
   "compileType": "miniprogram",
-  "libVersion": "2.6.6",
-  "appid": "wx1714e9aa709bac71",
-  "projectname": "r6swiki",
+  "libVersion": "2.12.0",
+  "appid": "wxb95ec0af78d27e0d",
+  "projectname": "R6SWiki",
   "debugOptions": {
     "hidedInDevtools": []
   },
+  "scripts": {},
   "isGameTourist": false,
   "simulatorType": "wechat",
   "simulatorPluginLibVersion": {},
   "condition": {
-    "search": {
-      "list": []
-    },
-    "conversation": {
-      "list": []
-    },
     "plugin": {
       "list": []
     },
     "game": {
-      "currentL": -1,
+      "list": []
+    },
+    "gamePlugin": {
       "list": []
     },
     "miniprogram": {
       "list": [
         {
-          "id": -1,
-          "name": "ops",
-          "pathName": "pages/operator/operator",
-          "query": "",
-          "scene": null
-        },
-        {
-          "id": -1,
-          "name": "detail",
-          "pathName": "pages/op_detail/op_detail",
-          "query": "",
-          "scene": null
-        },
-        {
-          "id": -1,
-          "name": "opt",
-          "pathName": "pages/operation/operation",
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
           "scene": null
         }
       ]

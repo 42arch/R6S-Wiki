@@ -1,32 +1,26 @@
-<!--index.wxml-->
-<view class="container">
-  <!-- <cover-image src='http://pqjrvod6e.bkt.clouddn.com/images/r6_esport_logo_majors_329099.png'></cover-image> -->
-  <text id='title'>《彩虹六号：围攻》档案</text>
-  <view class='category'>
-    <view class='category_row'>
-      <view class='content' bindtap='toOperatorPage'>
-        <text>干员</text>
-      </view>
-      <view class='content' bindtap='toOperationPage'>
-        <text>行动</text>
-      </view>
-    </view>
-    <view class='category_row'>
-      <view class='content' bindtap='toMapPage'>
-        <text>地图</text>
-      </view>
-      <view class='content' bindtap='toAffiliationPage'>
-        <text>组织</text>
-      </view>
-    </view>
-    <view class='category_row'>
-      <view class='content' bindtap='toMapPage'>
-        <text>装备</text>
-      </view>
-      <view class='content' bindtap='toAffiliationPage'>
-        <text>更多</text>
-      </view>
-    </view>
 
+<view class="top">
+  上方导航按钮
+</view>
+
+<view class="operator_view">
+  <view class="atk_view">
+    <view class="opt_view_head">
+      <image src="../../assets/images/icon_atk.png"></image>
+      <text>进攻方</text>
+    </view>
+    <view class="opt_view_body">
+      
+    </view>
+  </view>
+
+  <view class="def_view">
+    <view class="opt_view_head">
+      <image src="../../assets/images/icon_def.png"></image>
+      <text>防守方</text>
+    </view>
+    <view class="opt_view_body">
+
+    </view>
   </view>
 </view>
