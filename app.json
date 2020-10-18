@@ -4,9 +4,10 @@
     "pages/about/about"
   ],
   "usingComponents": {
-    "van-button": "/miniprogram_npm/vant-weapp/button",
     "van-tabbar": "/miniprogram_npm/vant-weapp/tabbar",
-    "van-tabbar-item": "/miniprogram_npm/vant-weapp/tabbar-item"
+    "van-tabbar-item": "/miniprogram_npm/vant-weapp/tabbar-item",
+    "van-row": "/miniprogram_npm/vant-weapp/row",
+    "van-col": "/miniprogram_npm/vant-weapp/col"
   },
   "window": {
     "backgroundTextStyle": "light",
