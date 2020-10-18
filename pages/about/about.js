@@ -1,10 +1,11 @@
-// pages/index/index.js
+// pages/about/about.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+
   },
 
   /**
@@ -25,7 +26,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    console.log("首页")
+    console.log("关于")
     this.getTabBar().init()
   },
 
