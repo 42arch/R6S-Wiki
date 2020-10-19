@@ -1,7 +1,8 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/about/about"
+    "pages/about/about",
+    "pages/opt_detail/opt_detail"
   ],
   "usingComponents": {
     "van-tabbar": "/miniprogram_npm/vant-weapp/tabbar",
@@ -20,13 +21,16 @@
     "color": "#000000",
     "selectedColor": "#000000",
     "backgroundColor": "#161616",
-    "list": [{
-      "pagePath": "pages/index/index",
-      "text": "首页"
-    }, {
-      "pagePath": "pages/about/about",
-      "text": "关于"
-    }]
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "关于"
+      }
+    ]
   },
   "sitemapLocation": "sitemap.json"
 }

@@ -13,17 +13,17 @@
       <image src="../../assets/images/icon_atk.png"></image>
       <text>进攻方</text>
     </view>
-    <view class="opt_view_body" >
+    <view scroll-y="true" style="height: 100%;" class="opt_view_body" >
       <view wx:for="{{opt_atk_data}}" wx:for-index="index" wx:for-item="opt_item" wx:key="index">
         <van-row >
           <van-col span="12">
-            <view class="opt_badge">
+            <view class="opt_badge" data-name="{{opt_item[0].name}}" bindtap="goToDetail">
               <cover-image class='opt_badge_img' src='{{opt_item[0].badge}}'></cover-image>
               <text>{{ opt_item[0].name }}</text>
             </view>
           </van-col>
           <van-col span="12">
-            <view class="opt_badge">
+            <view class="opt_badge" data-name="{{opt_item[1].name}}" bindtap="goToDetail">
               <cover-image class='opt_badge_img' src='{{opt_item[1].badge}}'></cover-image>
               <text>{{ opt_item[1].name }}</text>
             </view>
@@ -38,17 +38,17 @@
       <image src="../../assets/images/icon_def.png"></image>
       <text>防守方</text>
     </view>
-    <view class="opt_view_body">
+    <view scroll-y="true" style="height: 100%;" class="opt_view_body">
       <view wx:for="{{opt_def_data}}" wx:for-index="index" wx:for-item="opt_item" wx:key="index">
         <van-row >
           <van-col span="12">
-            <view class="opt_badge">
+            <view class="opt_badge" data-name="{{opt_item[0].name}}" bindtap="goToDetail">
               <cover-image class='opt_badge_img' src='{{opt_item[0].badge}}'></cover-image>
               <text>{{ opt_item[0].name }}</text>
             </view>
           </van-col>
           <van-col span="12">
-            <view class="opt_badge">
+            <view class="opt_badge" data-name="{{opt_item[1].name}}" bindtap="goToDetail">
               <cover-image class='opt_badge_img' src='{{opt_item[1].badge}}'></cover-image>
               <text>{{ opt_item[1].name }}</text>
             </view>

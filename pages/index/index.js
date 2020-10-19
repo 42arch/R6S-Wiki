@@ -17,10 +17,14 @@ Page({
         newArray.push(array.slice(i, i + size))
       }
       return newArray
-    },
-    // calcHeight: function() {
-    //   let oHeight = 
-    // }
+    }
+  },
+  goToDetail(e){
+    if(e.currentTarget.dataset.name) {
+      wx.navigateTo({
+        url: '/pages/opt_detail/opt_detail?name='+this.data.op_name
+      })
+    }
   },
 
   /**
@@ -28,17 +32,6 @@ Page({
    */
   onLoad: function (options) {
     let _this = this
-    wx.getSystemInfo({
-      success: (res) => {
-        console.log(res)
-        _this.setData({
-          height: res.windowHeight
-        })
-      },
-    })
-
-
-
     wx.request({
       url: 'https://api.ing3n.xyz/r6s/operators/simple',
       header: {
@@ -54,9 +47,6 @@ Page({
             def_data.push(item)
           }
         })
-
-        console.log(_this.methods.chunk(atk_data, 2))
-        console.log(_this.methods.chunk(def_data, 2))
 
         _this.setData({
           opt_data: res.data,
@@ -78,7 +68,6 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    console.log("首页")
     this.getTabBar().init()
   },
 
