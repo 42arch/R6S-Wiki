@@ -1,2 +1,9 @@
-<!--pages/opt_detail/opt_detail.wxml-->
-<text>pages/opt_detail/opt_detail.wxml</text>
+<view class="detail_view">
+  <view class="detail_head_view">
+    <image class="half_avatar" src="{{opt_detail_data.half_avatar}}"></image>
+    <image class="badge" src="{{opt_detail_data.badge}}"></image>
+    <view class="head_text">
+      {{opt_detail_data.name}}
+    </view>
+  </view>
+</view>

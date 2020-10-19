@@ -5,14 +5,31 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    opt_name: null,
+    opt_detail_data: null
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    this.setData({
+      opt_name: options.name
+    })
 
+    let _this = this
+    wx.request({
+      url: 'https://api.ing3n.xyz/r6s/operators?name=' + options.name,
+      header: {
+        "content-type": "application/texts"
+      },
+      success(res) {
+        console.log(res.data)
+        _this.setData({
+          opt_detail_data: res.data
+        })
+      }
+    })
   },
 
   /**

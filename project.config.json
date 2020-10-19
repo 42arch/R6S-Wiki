@@ -65,6 +65,13 @@
         {
           "name": "pages/index/index",
           "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/opt_detail/opt_detail",
+          "pathName": "pages/opt_detail/opt_detail",
+          "query": "name=IQ",
           "scene": null
         }
       ]

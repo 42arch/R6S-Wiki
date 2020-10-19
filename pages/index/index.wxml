@@ -18,13 +18,13 @@
         <van-row >
           <van-col span="12">
             <view class="opt_badge" data-name="{{opt_item[0].name}}" bindtap="goToDetail">
-              <cover-image class='opt_badge_img' src='{{opt_item[0].badge}}'></cover-image>
+              <image class='opt_badge_img' src='{{opt_item[0].badge}}'></image>
               <text>{{ opt_item[0].name }}</text>
             </view>
           </van-col>
           <van-col span="12">
             <view class="opt_badge" data-name="{{opt_item[1].name}}" bindtap="goToDetail">
-              <cover-image class='opt_badge_img' src='{{opt_item[1].badge}}'></cover-image>
+              <image class='opt_badge_img' src='{{opt_item[1].badge}}'></image>
               <text>{{ opt_item[1].name }}</text>
             </view>
           </van-col>
@@ -43,13 +43,13 @@
         <van-row >
           <van-col span="12">
             <view class="opt_badge" data-name="{{opt_item[0].name}}" bindtap="goToDetail">
-              <cover-image class='opt_badge_img' src='{{opt_item[0].badge}}'></cover-image>
+              <image class='opt_badge_img' src='{{opt_item[0].badge}}'></image>
               <text>{{ opt_item[0].name }}</text>
             </view>
           </van-col>
           <van-col span="12">
             <view class="opt_badge" data-name="{{opt_item[1].name}}" bindtap="goToDetail">
-              <cover-image class='opt_badge_img' src='{{opt_item[1].badge}}'></cover-image>
+              <image class='opt_badge_img' src='{{opt_item[1].badge}}'></image>
               <text>{{ opt_item[1].name }}</text>
             </view>
           </van-col>

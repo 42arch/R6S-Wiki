@@ -22,7 +22,7 @@ Page({
   goToDetail(e){
     if(e.currentTarget.dataset.name) {
       wx.navigateTo({
-        url: '/pages/opt_detail/opt_detail?name='+this.data.op_name
+        url: '/pages/opt_detail/opt_detail?name='+e.currentTarget.dataset.name
       })
     }
   },
