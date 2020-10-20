@@ -1,9 +1,36 @@
+<van-popup show="{{ full_show }}" z-index="999" position="bottom" 
+  bind:close="hideFull">
+  <van-tabs color="#36a9e0" active="{{ active }}" bind:change="onChange">
+    <van-tab title="普通">
+      <view class="wrapper">
+        <image src="{{opt_detail_data.full_avatar}}">
+        </image>
+      </view>
+    </van-tab>
+    <van-tab title="精英">
+      <view class="wrapper">
+        <image src="{{opt_detail_data.full_avatar}}">
+        </image>
+      </view>
+    </van-tab>
+  </van-tabs>
+</van-popup>
+
 <view class="detail_view">
-  <view class="detail_head_view">
+  <view class="detail_head_view" bindtap="showFull">
     <image class="half_avatar" src="{{opt_detail_data.half_avatar}}"></image>
     <image class="badge" src="{{opt_detail_data.badge}}"></image>
     <view class="head_text">
       {{opt_detail_data.name}}
     </view>
   </view>
+  <view class="detail_body_view">
+    <van-tabs active="{{ active }}" color="#36a9e0" swipeable>
+      <van-tab title="简介" name="a">内容 1</van-tab>
+      <van-tab title="生平" name="b">内容 2</van-tab>
+      <van-tab title="武器" name="c">内容 3</van-tab>
+      <van-tab title="装备" name="d">内容 4</van-tab>
+    </van-tabs>
+  </view>
+
 </view>

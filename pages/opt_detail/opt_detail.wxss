@@ -3,6 +3,19 @@ page {
   width: 100%;
   height: 100%;
 }
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333740;
+  /* transform: translateY(-100rpx); */
+
+}
+.wrapper image {
+  width: 480rpx;
+  height: 800rpx;
+}
+
 .detail_view {
   background-color: #0c0c0c;
   width: 100%;
@@ -40,4 +53,17 @@ page {
   text-align: center;
   font-weight: 400;
   /* transform: translateY(-128rpx); */
+}
+.detail_body_view {
+  margin-top: 20rpx;
+}
+
+.detail_body_view .van-tabs {
+  border: 0;
+}
+
+
+.detail_body_view .van-tab {
+  background-color: #333740;
+  color: #ffffff;
 }

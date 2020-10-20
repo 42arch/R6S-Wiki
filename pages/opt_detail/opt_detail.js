@@ -6,13 +6,32 @@ Page({
    */
   data: {
     opt_name: null,
-    opt_detail_data: null
+    opt_detail_data: null,
+    full_show: false,
+    active: 3
+  },
+  /**
+   * 显示全身像
+   */
+  showFull(){
+    console.log("xianshi")
+    this.setData({ full_show: true });
+  },
+  hideFull(){
+    console.log("yiicnag")
+    this.setData({ full_show: false });
+  },
+  onChange(){
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    wx.showLoading({
+      title: '数据加载中',
+    })
     this.setData({
       opt_name: options.name
     })
@@ -27,6 +46,9 @@ Page({
         console.log(res.data)
         _this.setData({
           opt_detail_data: res.data
+        })
+        wx.hideLoading({
+          success: (res) => {},
         })
       }
     })

@@ -5,10 +5,15 @@
     "pages/opt_detail/opt_detail"
   ],
   "usingComponents": {
+    "van-icon": "/miniprogram_npm/vant-weapp/icon",
     "van-tabbar": "/miniprogram_npm/vant-weapp/tabbar",
     "van-tabbar-item": "/miniprogram_npm/vant-weapp/tabbar-item",
     "van-row": "/miniprogram_npm/vant-weapp/row",
-    "van-col": "/miniprogram_npm/vant-weapp/col"
+    "van-col": "/miniprogram_npm/vant-weapp/col",
+    "van-popup": "/miniprogram_npm/vant-weapp/popup",
+    "van-transition": "/miniprogram_npm/vant-weapp/transition",
+    "van-tab": "/miniprogram_npm/vant-weapp/tab",
+    "van-tabs": "/miniprogram_npm/vant-weapp/tabs"
   },
   "window": {
     "backgroundTextStyle": "light",
