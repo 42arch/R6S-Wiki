@@ -9,10 +9,12 @@ Page({
   },
 
   showPopup() {
+    console.log('xxxxxxx')
     this.setData({ show: true });
   },
 
   onClose() {
+    console.log('yyyyyy')
     this.setData({ show: false });
   },
   /**

@@ -1,4 +1,4 @@
 <!--pages/about/about.wxml-->
 <text>pages/about/about.wxml</text>
-<!-- <van-button type="primary" bind:click="showPopup">显示遮罩层</van-button>
-<van-popup show="{{ show }}" bind:close="onClose">内容</van-popup> -->
+<van-button type="primary" bind:click="showPopup">显示遮罩层</van-button>
+<van-popup show="{{ show }}" bind:close="onClose">内容</van-popup>

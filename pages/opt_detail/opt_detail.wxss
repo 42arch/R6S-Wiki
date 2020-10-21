@@ -9,7 +9,6 @@ page {
   justify-content: center;
   background-color: #333740;
   /* transform: translateY(-100rpx); */
-
 }
 .wrapper image {
   width: 480rpx;
@@ -66,4 +65,11 @@ page {
 .detail_body_view .van-tab {
   background-color: #333740;
   color: #ffffff;
+}
+
+/* 标签栏样式 */
+.tab_info_view {
+  background-color: #0c0c0c;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
 }
