@@ -1,6 +1,6 @@
 <van-popup show="{{ full_show }}" z-index="999" position="bottom" 
   bind:close="hideFull">
-  <van-tabs color="#36a9e0" active="{{ active }}" bind:change="onChange">
+  <van-tabs color="#36a9e0" bind:change="onChange">
     <van-tab title="普通">
       <view class="wrapper">
         <image src="{{opt_detail_data.full_avatar}}">
@@ -25,12 +25,15 @@
     </view>
   </view>
   <view class="detail_body_view">
-    <van-tabs active="{{ active }}" color="#36a9e0" swipeable>
+    <van-tabs active="b" color="#36a9e0" swipeable sticky animated>
       <van-tab title="简介" name="a">内容 1</van-tab>
-      <van-tab title="生平" name="b">内容 2</van-tab>
+      <van-tab title="生平" name="b">
+        
+      </van-tab>
       <van-tab title="武器" name="c">内容 3</van-tab>
       <van-tab title="装备" name="d">内容 4</van-tab>
     </van-tabs>
+
   </view>
 
 </view>

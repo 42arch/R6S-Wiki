@@ -10,6 +10,9 @@
     "type": "git",
     "url": "git+https://github.com/ingen42/R6S-Wiki.git"
   },
+  "keywords": [
+    "r6s"
+  ],
   "author": "ren dan",
   "license": "ISC",
   "bugs": {
@@ -17,6 +20,6 @@
   },
   "homepage": "https://github.com/ingen42/R6S-Wiki#readme",
   "dependencies": {
-    "vant-weapp": "^0.5.28"
+    "@vant/weapp": "^1.5.2"
   }
 }

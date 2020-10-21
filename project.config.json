@@ -6,7 +6,7 @@
   "setting": {
     "urlCheck": true,
     "es6": true,
-    "enhance": false,
+    "enhance": true,
     "postcss": true,
     "preloadBackgroundData": false,
     "minified": true,
@@ -36,7 +36,7 @@
     "minifyWXSS": true
   },
   "compileType": "miniprogram",
-  "libVersion": "2.6.6",
+  "libVersion": "2.13.1",
   "appid": "wx1714e9aa709bac71",
   "projectname": "r6swiki",
   "cloudfunctionTemplateRoot": "",

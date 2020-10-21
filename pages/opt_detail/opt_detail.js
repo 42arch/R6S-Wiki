@@ -7,8 +7,7 @@ Page({
   data: {
     opt_name: null,
     opt_detail_data: null,
-    full_show: false,
-    active: 3
+    full_show: false
   },
   /**
    * 显示全身像
