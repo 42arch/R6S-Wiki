@@ -1,20 +1,3 @@
-<!-- <van-popup show="{{ full_show }}" z-index="999" position="bottom" 
-  bind:close="hideFull">
-  <van-tabs color="#36a9e0" bind:change="onChange">
-    <van-tab title="普通">
-      <view class="wrapper">
-        <image src="{{opt_detail_data.full_avatar}}">
-        </image>
-      </view>
-    </van-tab>
-    <van-tab title="精英">
-      <view class="wrapper">
-        <image src="{{opt_detail_data.full_avatar}}">
-        </image>
-      </view>
-    </van-tab>
-  </van-tabs>
-</van-popup> -->
 
 <van-overlay z-index="9" show="{{ full_show }}" bind:click="hideFull">
   <view class="wrapper">
@@ -33,16 +16,18 @@
     </view>
   </view>
   <view class="detail_body_view">
-    <van-tabs active="b" color="#36a9e0" swipeable sticky>
-      <van-tab title="简介" name="a">
+    <van-tabs active="{{c}}" color="#36a9e0" swipeable sticky>
+      <van-tab title="信息" name="a">
+        
         <view class="tab_info_view">
+          <van-divider contentPosition="center" dashed>技能</van-divider>
+          <van-divider contentPosition="center" dashed>个人简介</van-divider>
           <view>姓名：{{ opt_detail_data.real_name }}</view>
           <view>性别： {{ opt_detail_data.gender }}</view>
           <view>身高: {{ opt_detail_data.height }} 公分</view>
-          <view>体重：{{ opt_detail_data.wight }} 公斤</view>
+          <view>体重：{{ opt_detail_data.weight }} 公斤</view>
           <view>生日：{{ opt_detail_data.birthday }}</view>
           <view>出生地： {{ opt_detail_data.birth_place }}</view>
-          
         </view>
       </van-tab>
       <van-tab title="生平" name="b">
@@ -55,11 +40,46 @@
           <text>{{ opt_detail_data.train }}</text>
           <van-divider contentPosition="center" dashed>相关经验</van-divider>
           <text>{{ opt_detail_data.experience }}</text>
+          <van-divider contentPosition="center" dashed>附录</van-divider>
+          <text>{{ opt_detail_data.remark }}</text>
         </view>
 
       </van-tab>
-      <van-tab title="武器" name="c">内容 3</van-tab>
-      <van-tab title="装备" name="d">内容 4</van-tab>
+      <van-tab title="装备" name="c">
+        <view class="tab_info_view" id="weapon_info_view">
+          <van-divider contentPosition="center" dashed>主要武器</van-divider>
+          <van-grid column-num="3" gutter="{{ 5 }}" >
+            <van-grid-item content-class="weapon_view" use-slot 
+              wx:for="{{opt_detail_data.weapons}}" wx:for-index="index" wx:for-item="weapon_item" wx:key="index" 
+              wx:if="{{weapon_item.is_main==true}}" >
+              <van-image
+                width="230rpx"
+                height="121rpx"
+                fit="contain"
+                src="{{weapon_item.image}}"
+              />
+              <text class="weapon_name">{{weapon_item.name}}</text>
+            </van-grid-item>
+
+          </van-grid>
+          <van-divider contentPosition="center" dashed>次要武器</van-divider>
+          <van-grid column-num="3" gutter="{{ 5 }}" >
+            <van-grid-item content-class="weapon_view" use-slot 
+              wx:for="{{opt_detail_data.weapons}}" wx:for-index="index" wx:for-item="weapon_item" wx:key="index" 
+              wx:if="{{weapon_item.is_main==false}}" >
+              <van-image
+                width="230rpx"
+                height="121rpx"
+                fit="contain"
+                src="{{weapon_item.image}}"
+              />
+              <text class="weapon_name">{{weapon_item.name}}</text>
+            </van-grid-item>
+
+          </van-grid>
+        </view>
+      </van-tab>
+      <van-tab title="其他" name="d">其他内容</van-tab>
     </van-tabs>
   </view>
 </view>

@@ -71,7 +71,7 @@
         {
           "name": "pages/opt_detail/opt_detail",
           "pathName": "pages/opt_detail/opt_detail",
-          "query": "name=IQ",
+          "query": "name=Twitch",
           "scene": null
         }
       ]
