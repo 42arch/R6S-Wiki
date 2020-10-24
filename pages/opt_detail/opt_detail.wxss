@@ -75,6 +75,19 @@ page {
   padding-bottom: 20rpx;
 }
 
+#ability_info_view .ability_icon{
+  width: 350rpx;
+  height: 120rpx;
+  background-size: contain;
+}
+
+#ability_info_view .ability_name{
+  text-align: center;
+}
+#ability_info_view .ability_info{
+  font-size: small;
+}
+
 #weapon_info_view .van-grid-item .weapon_view {
   background-color: #0c0c0c !important;
   padding: 8rpx 4rpx;

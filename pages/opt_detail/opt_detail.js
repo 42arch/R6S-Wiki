@@ -43,6 +43,18 @@ Page({
       },
       success(res) {
         console.log(res.data)
+        res.data.ability_icon = "http://ing3n.xyz/ability/" + res.data.ability_icon
+        if(res.data.height == null) {
+          res.data.height = "[遭到屏蔽]"
+        } else {
+          res.data.height = res.data.height + " 公分"
+        }
+        if(res.data.weight == null) {
+          res.data.weight = "[遭到屏蔽]"
+        } else {
+          res.data.weight = res.data.weight + " 公分"
+        }
+
         _this.setData({
           opt_detail_data: res.data
         })

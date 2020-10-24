@@ -21,13 +21,27 @@
         
         <view class="tab_info_view">
           <van-divider contentPosition="center" dashed>技能</van-divider>
+          <view id="ability_info_view">
+            <van-row>
+              <van-col span="12">
+                <image class="ability_icon" src="{{opt_detail_data.ability_icon}}"/>
+              </van-col>
+              <van-col span="12">
+                <view class="ability_name">{{opt_detail_data.ability}}</view>
+                  <view style="text-align: center">----</view>
+                <view class="ability_info">{{opt_detail_data.ability_info}}</view>
+              </van-col>
+            </van-row>
+
+          </view>
           <van-divider contentPosition="center" dashed>个人简介</van-divider>
           <view>姓名：{{ opt_detail_data.real_name }}</view>
-          <view>性别： {{ opt_detail_data.gender }}</view>
-          <view>身高: {{ opt_detail_data.height }} 公分</view>
-          <view>体重：{{ opt_detail_data.weight }} 公斤</view>
+          <view>性别：{{ opt_detail_data.gender }}</view>
+          <view>身高：{{ opt_detail_data.height }}</view>
+          <view>体重：{{ opt_detail_data.weight }}</view>
           <view>生日：{{ opt_detail_data.birthday }}</view>
-          <view>出生地： {{ opt_detail_data.birth_place }}</view>
+          <view>出生地：{{ opt_detail_data.birth_place }}</view>
+          <view>组织：{{ opt_detail_data.unit[0].full_name }} ({{opt_detail_data.unit[0].name}})</view>
         </view>
       </van-tab>
       <van-tab title="生平" name="b">
