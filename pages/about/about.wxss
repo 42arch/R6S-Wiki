@@ -1,1 +1,22 @@
 /* pages/about/about.wxss */
+page {
+  background-color: #0c0c0c;
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+}
+
+.about_view {
+  margin-bottom: 40px;
+}
+
+#overview_image {
+  width: 750rpx;
+  height: 375rpx;
+  background-size: contain;
+}
+
+.version_view {
+  position: absolute;
+  bottom: 50px;
+}

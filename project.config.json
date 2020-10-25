@@ -73,6 +73,12 @@
           "pathName": "pages/opt_detail/opt_detail",
           "query": "name=Twitch",
           "scene": null
+        },
+        {
+          "name": "pages/about/about",
+          "pathName": "pages/about/about",
+          "query": "",
+          "scene": null
         }
       ]
     }
