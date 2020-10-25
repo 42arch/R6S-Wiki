@@ -1,10 +1,26 @@
 
+<van-action-sheet round="false"
+  overlay="false"
+  show="{{ sheet_show }}"
+  actions="{{ sheet_actions }}"
+  bind:close="onSheetClose"
+  bind:select="onSheetSelect"
+/>
+
 <view class="top">
-  <van-row>
-    <van-col span="8">span: 8</van-col>
-    <van-col span="8">span: 8</van-col>
-    <van-col span="8">span: 8</van-col>
-  </van-row>
+  <!-- <van-sticky> -->
+        <view class="top_logo_view">
+        </view>
+
+        <view class="top_button_view">
+          <van-button square="true" color="#36a9e0" icon="wap-nav" bindtap="onShowSheet"
+            custom-style="width: 90rpx; height: 70rpx"></van-button>
+          <!-- <van-dropdown-menu>
+            <van-dropdown-item value="{{ 0 }}" options="{{ nav_menu.option }}" />
+          </van-dropdown-menu> -->
+        </view>
+  <!-- </van-sticky> -->
+
 </view>
 
 <view class="operator_view">

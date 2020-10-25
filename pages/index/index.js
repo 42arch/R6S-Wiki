@@ -8,7 +8,37 @@ Page({
     opt_data: null,
     opt_atk_data: null,
     opt_def_data: null,
-    height: 0
+    height: 0,
+    nav_menu: {
+      option: [
+        {text: "特勤干员", value: 0},
+        {text: "地图", value: 1}
+      ]
+    },
+    sheet_show: false,
+    sheet_actions: [
+      {
+        name: '地图',
+      },
+      {
+        name: '赛季',
+      },
+      {
+        name: '选项',
+        subname: '副文本',
+        openType: 'share',
+      },
+    ],
+  },
+  onShowSheet() {
+    this.setData({ sheet_show: true })
+  },
+  onSheetClose() {
+    this.setData({ sheet_show: false })
+  },
+
+  onSheetSelect(event) {
+    console.log(event.detail);
   },
   methods: {
     chunk: function(array, size) {
