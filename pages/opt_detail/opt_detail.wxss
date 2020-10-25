@@ -75,6 +75,14 @@ page {
   padding-bottom: 20rpx;
 }
 
+#star_info_view {
+  text-align: center;
+}
+
+#star_info_view #role_info_view {
+  margin-bottom: 15rpx;
+}
+
 #ability_info_view .ability_icon{
   width: 290rpx;
   height: 100rpx;

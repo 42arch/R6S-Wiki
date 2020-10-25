@@ -30,8 +30,27 @@
                   <view style="text-align: center">----</view>
                 <view class="ability_info">{{opt_detail_data.ability_info}}</view>
               </van-col>
+            </van-row>          
+          </view>
+          <van-divider contentPosition="center" dashed>定位</van-divider>
+          <view id="star_info_view">
+            <view id="role_info_view">
+              {{opt_detail_data.second_role}}
+            </view>
+            <van-row>
+              <van-col span="8">
+                <view>难度</view>
+                <van-rate size="35rpx" color="#ffffff" count="3" readonly value="{{ opt_detail_data.difficult }}"/>
+              </van-col>
+              <van-col span="8">
+                <view>速度</view>
+                <van-rate size="35rpx" color="#ffffff" count="3" readonly value="{{ opt_detail_data.speed }}"/>
+              </van-col>
+              <van-col span="8">
+                <view>护甲</view>
+                <van-rate size="35rpx" color="#ffffff" count="3" readonly value="{{ opt_detail_data.armor }}"/>
+              </van-col>
             </van-row>
-
           </view>
           <van-divider contentPosition="center" dashed>个人简介</van-divider>
           <view>姓名：{{ opt_detail_data.real_name }}</view>
