@@ -76,9 +76,10 @@ page {
 }
 
 #ability_info_view .ability_icon{
-  width: 350rpx;
-  height: 120rpx;
-  background-size: contain;
+  width: 290rpx;
+  height: 100rpx;
+  background-size: cover;
+  transform: translateX(-30rpx);
 }
 
 #ability_info_view .ability_name{
@@ -89,9 +90,10 @@ page {
 }
 
 #weapon_info_view .van-grid-item .weapon_view {
-  background-color: #0c0c0c !important;
+  background-color: #333740 !important;
   padding: 8rpx 4rpx;
   height: 250rpx;
+  margin-bottom: 10rpx;
 }
 
 #weapon_info_view .weapon_name {

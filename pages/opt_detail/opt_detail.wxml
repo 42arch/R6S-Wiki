@@ -88,7 +88,19 @@
               />
               <text class="weapon_name">{{weapon_item.name}}</text>
             </van-grid-item>
-
+          </van-grid>
+          <van-divider contentPosition="center" dashed>装备</van-divider>
+          <van-grid column-num="3" gutter="{{ 5 }}" >
+            <van-grid-item content-class="weapon_view" use-slot 
+              wx:for="{{opt_detail_data.gadgets}}" wx:for-index="index" wx:for-item="weapon_item" wx:key="index">
+              <van-image
+                width="230rpx"
+                height="121rpx"
+                fit="contain"
+                src="{{weapon_item.image}}"
+              />
+              <text class="weapon_name">{{weapon_item.name}}</text>
+            </van-grid-item>
           </van-grid>
         </view>
       </van-tab>
