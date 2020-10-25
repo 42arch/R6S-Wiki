@@ -9,24 +9,20 @@ Page({
     opt_atk_data: null,
     opt_def_data: null,
     height: 0,
-    nav_menu: {
-      option: [
-        {text: "特勤干员", value: 0},
-        {text: "地图", value: 1}
-      ]
-    },
     sheet_show: false,
     sheet_actions: [
       {
         name: '地图',
+        value: 'maps',
+        url: '/pages/maps/maps'
       },
       {
         name: '赛季',
+        value: 'seasons',
+        url: '/pages/seasons/seasons'
       },
       {
-        name: '选项',
-        subname: '副文本',
-        openType: 'share',
+        name: '选项'
       },
     ],
   },
@@ -37,8 +33,11 @@ Page({
     this.setData({ sheet_show: false })
   },
 
-  onSheetSelect(event) {
-    console.log(event.detail);
+  onSheetSelect(e) {
+    console.log(e.detail)
+    wx.navigateTo({
+      url: e.detail.url,
+    })
   },
   methods: {
     chunk: function(array, size) {
