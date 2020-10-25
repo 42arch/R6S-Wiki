@@ -45,19 +45,16 @@ page {
 }
 
 
-/* #d0a344 */
-.operator_view .opt_view_body .opt_badge {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #333740;
-  margin: 5rpx;
+.opt_badge_view {
+  background-color: #0c0c0c !important;
+  margin-top: 8rpx;
+  padding: 12rpx 2rpx !important;
   color: #fff;
   font-weight: 500;
   font-family: Arial, Helvetica, sans-serif;
 }
-.opt_badge .opt_badge_img {
-  width: 128rpx;
-  height: 128rpx;
+
+.opt_badge_view .opt_badge_img {
+  width:128rpx; 
+  height:128rpx
 }

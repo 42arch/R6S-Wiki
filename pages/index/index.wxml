@@ -13,22 +13,17 @@
       <image src="../../assets/images/icon_atk.png"></image>
       <text>进攻方</text>
     </view>
-    <view scroll-y="true" style="height: 100%;" class="opt_view_body" >
-      <view wx:for="{{opt_atk_data}}" wx:for-index="index" wx:for-item="opt_item" wx:key="index">
-        <van-row >
-          <van-col span="12">
-            <view class="opt_badge" data-name="{{opt_item[0].name}}" bindtap="goToDetail">
-              <image class='opt_badge_img' src='{{opt_item[0].badge}}'></image>
-              <text>{{ opt_item[0].name }}</text>
-            </view>
-          </van-col>
-          <van-col span="12">
-            <view class="opt_badge" data-name="{{opt_item[1].name}}" bindtap="goToDetail">
-              <image class='opt_badge_img' src='{{opt_item[1].badge}}'></image>
-              <text>{{ opt_item[1].name }}</text>
-            </view>
-          </van-col>
-        </van-row>
+    <view style="height: 100%;" class="opt_view_body" >
+      <view wx:for="{{opt_atk_data}}" wx:for-index="index" wx:for-item="item" wx:key="index">
+          <van-grid column-num="2"  gutter="{{ 5 }}" >
+            <van-grid-item use-slot content-class="opt_badge_view"
+              wx:for="{{item}}" wx:for-index="idx" wx:for-item="one_item" wx:key="idx" >
+              <view class="opt_badge" data-name="{{one_item.name}}" bindtap="goToDetail">
+                <image class="opt_badge_img" src="{{one_item.badge}}"></image>
+                <text>{{ one_item.name }}</text>
+              </view>
+            </van-grid-item>
+          </van-grid>
       </view>
     </view>
   </view>
@@ -39,21 +34,16 @@
       <text>防守方</text>
     </view>
     <view scroll-y="true" style="height: 100%;" class="opt_view_body">
-      <view wx:for="{{opt_def_data}}" wx:for-index="index" wx:for-item="opt_item" wx:key="index">
-        <van-row >
-          <van-col span="12">
-            <view class="opt_badge" data-name="{{opt_item[0].name}}" bindtap="goToDetail">
-              <image class='opt_badge_img' src='{{opt_item[0].badge}}'></image>
-              <text>{{ opt_item[0].name }}</text>
-            </view>
-          </van-col>
-          <van-col span="12">
-            <view class="opt_badge" data-name="{{opt_item[1].name}}" bindtap="goToDetail">
-              <image class='opt_badge_img' src='{{opt_item[1].badge}}'></image>
-              <text>{{ opt_item[1].name }}</text>
-            </view>
-          </van-col>
-        </van-row>
+      <view wx:for="{{opt_def_data}}" wx:for-index="index" wx:for-item="item" wx:key="index">
+        <van-grid column-num="2"  gutter="{{ 5 }}" >
+            <van-grid-item use-slot content-class="opt_badge_view"
+              wx:for="{{item}}" wx:for-index="idx" wx:for-item="one_item" wx:key="idx" >
+              <view class="opt_badge" data-name="{{one_item.name}}" bindtap="goToDetail">
+                <image class="opt_badge_img" src="{{one_item.badge}}"></image>
+                <text>{{ one_item.name }}</text>
+              </view>
+            </van-grid-item>
+          </van-grid>
       </view>
     </view>
   </view>

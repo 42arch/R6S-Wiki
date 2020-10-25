@@ -6,7 +6,6 @@
   </view>
 </van-overlay>
 
-
 <view class="detail_view">
   <view class="detail_head_view" bindtap="showFull">
     <image class="half_avatar" src="{{opt_detail_data.half_avatar}}"></image>
@@ -23,10 +22,10 @@
           <van-divider contentPosition="center" dashed>技能</van-divider>
           <view id="ability_info_view">
             <van-row>
-              <van-col span="12">
+              <van-col span="8">
                 <image class="ability_icon" src="{{opt_detail_data.ability_icon}}"/>
               </van-col>
-              <van-col span="12">
+              <van-col span="16">
                 <view class="ability_name">{{opt_detail_data.ability}}</view>
                   <view style="text-align: center">----</view>
                 <view class="ability_info">{{opt_detail_data.ability_info}}</view>

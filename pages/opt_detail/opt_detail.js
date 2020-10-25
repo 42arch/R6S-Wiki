@@ -42,8 +42,9 @@ Page({
         "content-type": "application/texts"
       },
       success(res) {
-        console.log(res.data)
+        res.data.badge = "http://ing3n.xyz/icon2/" + res.data.badge
         res.data.ability_icon = "http://ing3n.xyz/ability/" + res.data.ability_icon
+        res.data.half_avatar = "http://ing3n.xyz/half2/" + options.name.toLowerCase() + ".png"
         if(res.data.height == null) {
           res.data.height = "[遭到屏蔽]"
         } else {

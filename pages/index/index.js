@@ -38,6 +38,11 @@ Page({
         "content-type": "application/texts"
       },
       success(res) {
+        res.data.forEach(item => {
+          item.badge = "http://ing3n.xyz/icon2/" + item.badge
+        })
+
+        console.log(res.data)
         let atk_data = []
         let def_data = []
         res.data.forEach(item => {
