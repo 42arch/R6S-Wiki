@@ -79,6 +79,11 @@
           "pathName": "pages/about/about",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/seasons/seasons",
+          "pathName": "pages/seasons/seasons",
+          "scene": null
         }
       ]
     }

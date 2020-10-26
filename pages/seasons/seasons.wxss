@@ -1,1 +1,17 @@
 /* pages/seasons/seasons.wxss */
+page {
+  width: 100%;
+  height: 100%;
+  background-color: #0c0c0c;
+  color: #ffffff;
+}
+
+.season_view {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20rpx;
+  margin-bottom: 15rpx;
+  border-bottom: 1rpx solid #ffffff;
+}

@@ -1,3 +1,9 @@
 <!--pages/seasons/seasons.wxml-->
-<text>pages/seasons/seasons.wxml</text>
-<text>这是一个空页面，在等待着开发者...</text>
+<view class="seasons_view">
+  <view class="season_view" wx:for="{{ seasons_data }}" wx:for-index="index" wx:for-item="item" wx:key="index">
+    <van-image width="650rpx" height="366rpx" fit="contain"
+     src="{{ item.image }}"/>
+     <view>{{ item.year_season }} · {{ item.name }}</view>
+     <view>{{ item.name_eng }}</view>
+  </view>
+</view>

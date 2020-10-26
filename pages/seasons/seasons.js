@@ -5,14 +5,31 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    seasons_data: null
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    let _this = this
+    wx.request({
+      url: 'https://api.ing3n.xyz/r6s/seasons',
+      header: {
+        "content-type": "application/texts"
+      },
+      success(res) {
+        res.data.forEach(item => {
+          item.image = "http://ing3n.xyz/season/" + item.year_season + ".jpg"
+          item.year_season = item.year_season !== null ? item.year_season.toUpperCase() : null
+        })
 
+        _this.setData({
+          seasons_data: res.data.slice(1, res.data.length)
+        })
+        console.log(_this.data.seasons_data)
+      }
+    })
   },
 
   /**
