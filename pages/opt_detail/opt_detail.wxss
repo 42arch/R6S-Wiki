@@ -95,6 +95,7 @@ page {
 }
 #ability_info_view .ability_info{
   font-size: small;
+  text-align: center;
 }
 
 #weapon_info_view .van-grid-item .weapon_view {
