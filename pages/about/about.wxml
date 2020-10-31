@@ -5,7 +5,7 @@
   </view>
   <view class="version_view">
     <text>此微信小程序为第三方应用，非育碧或某讯官方应用。</text>
-    <view><van-icon name="smile-o" size="40rpx"/> V0.2.1 </view>
+    <view><van-icon name="smile-o" size="40rpx"/> V0.9.2 </view>
   </view>
 </view>
 
